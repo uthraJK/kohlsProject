@@ -37,14 +37,12 @@ public void clickSearchIcon()
 {
 searchIcon.click();	
 }
-@FindBy(xpath = "//*[@id=\"pmpMain-rightPanel\"]/div[1]/div[2]/span[2]")
+@FindBy(xpath = "//*[contains(@class,'result_count')]")
 private WebElement countofSearchResults;
 
 public void displaycountofSearchResults()
 {
-	String products = hp.getText(countofSearchResults);
-	int count= Integer.parseInt(products.substring(1, products.length()-1));
-	
+System.out.println(hp.getText(countofSearchResults));
 }
 @FindBy(xpath = "//*[@id=\"kohls_logo\"]/a/svg")
 private WebElement kohlsIcon;
@@ -100,6 +98,3 @@ public void selectShopByDepartmentToys()
 }
 
 }
-
-
-

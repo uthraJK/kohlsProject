@@ -33,11 +33,12 @@ public class HomePageTest {
 
 	@Then("^User should be navigated to the search results page$")
 	public void user_should_be_navigated_to_the_search_results_page() throws Throwable {
-		//Assert.assertTrue(hp.displaycountofSearchResults() > 0);
-		//Assert.assertNotNull();
 		hp.displaycountofSearchResults();
-		//System.out.println(hp.displaycountofSearchResults());
-		hp.navigateToHomePage();
+		System.out.println("working");
+		
+		//		Assert.assertTrue(hp.displaycountofSearchResults());
+//	System.out.println(hp.displaycountofSearchResults());
+//		hp.navigateToHomePage();
 	}
 
 	@When("^user clicks on shop by department$")

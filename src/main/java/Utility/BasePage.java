@@ -97,7 +97,7 @@ public boolean isElementVisible(WebElement element)
 	boolean res= false;
 	try
 	{
-		WebDriverWait wait = new WebDriverWait(driver,30);
+		WebDriverWait wait = new WebDriverWait(driver,60);
 		wait.until(ExpectedConditions.visibilityOf(element));
 		res = true;
 		return res;

@@ -37,12 +37,14 @@ public void clickSearchIcon()
 {
 searchIcon.click();	
 }
-@FindBy(xpath = "//*[contains(@class,'result_count')]")
+@FindBy(xpath = " //*[contains(@class,'result_count')]")
 private WebElement countofSearchResults;
 
-public void displaycountofSearchResults()
+public int displaycountofSearchResults()
 {
-System.out.println(hp.getText(countofSearchResults));
+	String s = countofSearchResults.getText();	
+	int count = Integer.parseInt(s.substring(1, s.length()-1));
+	return count;
 }
 @FindBy(xpath = "//*[@id=\"kohls_logo\"]/a/svg")
 private WebElement kohlsIcon;

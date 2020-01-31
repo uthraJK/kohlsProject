@@ -13,10 +13,17 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+
+
 public class BasePage {
 	
 	public static WebDriver driver;
 	public String browser ="chrome";
+//	public ExtentReports extent;
+//	public static ExtentTest scenarioDef;
+//	public static ExtentTest features;
+//	public static String reportLocation ="C:\\Users\\Balajee\\eclipse-workspace\\com.Kohls\\Reporting";
+
 	
 	
 public BasePage() {

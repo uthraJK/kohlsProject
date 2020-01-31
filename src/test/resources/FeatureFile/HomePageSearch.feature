@@ -8,10 +8,10 @@ Then User should be navigated to the search results page
 Examples:
 |Products|
 |shoes|
-#|Electronics|
-#|Toys|
-#|Beauty|
-#|Furniture|
+|Electronics|
+|Toys|
+|Beauty|
+|Furniture|
 
 #Scenario Outline:Product selection with shop by Department
 #Given user navigates to the Kohls application 
